@@ -1,0 +1,91 @@
+/* Small-screen layout changes load after the desktop styles. */
+
+@media(max-width:850px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  .links {
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+  .has-menu .nav {
+    flex-wrap: nowrap;
+  }
+  .has-menu .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 25px 32px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .has-menu .links.open {
+    display: flex;
+  }
+  .has-menu .menu {
+    display: block;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .stat:nth-child(2) {
+    border-right: 0;
+  }
+  .showcase,.legacy-panel {
+    grid-template-columns: 1fr;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .section-head,.cta .inner {
+    display: block;
+  }
+  .section {
+    padding: 65px 0;
+  }
+  .details {
+    padding: 32px;
+  }
+}
+
+@media(max-width:500px) {
+  .container,.nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1 {
+    font-size: 69px;
+  }
+  .stat {
+    padding: 22px 17px;
+  }
+  .stat strong {
+    font-size: 27px;
+  }
+  .vehicle-stage {
+    min-height: 280px;
+  }
+  .vehicle-stage svg {
+    width: 130%;
+  }
+  .hotspot {
+    width: 29px;
+    height: 29px;
+  }
+  .details h3 {
+    font-size: 30px;
+  }
+}
+
+/* Honor the visitor’s reduced-motion setting. */
+
+@media(prefers-reduced-motion:reduce) {
+  *,*:before,*:after {
+    scroll-behavior: auto!important;
+    transition: none!important;
+    animation: none!important;
+  }
+}

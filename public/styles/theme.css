@@ -1,0 +1,19 @@
+/* Sama, start here to change the site palette. Section 4 sets its own colors in sections.css. */
+:root {
+  --ink: #14283b;
+  --muted: #65717a;
+  --accent: #0064b1;
+  --accent-hover: #004f8d;
+  --line: #d9dfe1;
+  --paper: #f7f7f4;
+  --navy: #102b42;
+}
+
+/* Satoshi is bundled locally so the font loads without a third-party request. */
+@font-face  {
+  font-family: Satoshi;
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+}
