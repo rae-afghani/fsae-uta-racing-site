@@ -1,0 +1,269 @@
+/* Global type, spacing, and shared buttons */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Satoshi,Arial,Helvetica,sans-serif;
+  font-weight: 400;
+}
+
+button,a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(247,247,244,.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid #e3e5e3;
+}
+
+.nav {
+  max-width: 1320px;
+  margin: auto;
+  padding: 17px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: -.06em;
+  font-size: 27px;
+  white-space: nowrap;
+}
+
+.brand b {
+  color: var(--accent);
+}
+
+.brand small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: .23em;
+  font-weight: 700;
+  color: #6a7780;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px,2vw,30px);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+  padding: 15px 21px;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: #9ca8ac;
+}
+
+.btn.outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow:before {
+  content: "";
+  height: 2px;
+  width: 25px;
+  background: var(--accent);
+}
+
+h1 {
+  font-size: clamp(65px,9vw,145px);
+  line-height: .83;
+  letter-spacing: -.09em;
+  margin: 31px 0 22px;
+  font-weight: 900;
+  max-width: 860px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Footer. Sama, the three columns are branding, site links, and socials. */
+footer {
+  border-top: 1px solid var(--line);
+  padding: clamp(2.75rem, 6vw, 5.5rem) 0;
+  background: var(--navy);
+  color: #e1ebf5;
+  font-size: 1rem;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+}
+
+.footer-brand .brand {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.footer-brand .brand b {
+  color: #9ed4ff;
+}
+
+.footer-brand p {
+  margin: .65rem 0 0;
+}
+
+.footer-copyright {
+  font-size: .8rem;
+  color: #bbccdc;
+}
+
+.foot-links {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: .75rem;
+}
+
+.footer-label {
+  margin-bottom: .35rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.foot-links a:hover, .foot-links a[aria-current="page"] {
+  color: #bce3ff;
+  text-decoration: underline;
+}
+
+.links a[aria-current="page"] {
+  color: var(--accent);
+}
+
+footer a:focus-visible {
+  outline-color: #bce3ff;
+}
+
+@media (max-width: 650px) {
+  .foot {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-height,72px) + 1rem);
+}
+
+
+
+/* Sama, hide only the page scrollbar. Touch, wheel, and keyboard scrolling still work,
+   and scrollbars inside things like the template code boxes remain available. */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* The text scales to the band's inner width, so the G has room even if a
+   browser shows a scrollbar. The alpha value controls how faint it looks. */
+.footer-wordmark {
+  container-type: inline-size;
+  padding: 0 3% 1.8vw;
+  background: var(--navy);
+  color: rgb(158 212 255 / 60%);
+  font-weight: 900;
+  line-height: .9;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footer-wordmark span {
+  display: block;
+  font-size: 16vw;
+  font-size: 17cqw;
+  letter-spacing: -.065em;
+}

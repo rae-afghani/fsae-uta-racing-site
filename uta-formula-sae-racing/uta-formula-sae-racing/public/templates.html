@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f4">
+    <title>Section Templates | UTA Formula SAE Racing</title>
+    <link rel="preload" href="/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/site.css">
+    <script src="/scripts/site.js" defer></script>
+    <script src="/scripts/templates.js" defer></script>
+  </head>
+  <body>
+    <!-- Sama, these page links appear in the header and footer of each HTML page. -->
+    <header>
+      <div class="nav">
+        <a class="brand" href="/">UTA<b>RACING.</b><small>FORMULA SAE · ARLINGTON, TX</small></a>
+        <button class="menu" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <nav class="links" id="site-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/team.html">Team Members</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/templates.html" aria-current="page">Templates</a>
+        </nav>
+      </div>
+    </header>
+    <main class="section inner-page">
+      <div class="container">
+        <div class="eyebrow">
+          UTA Racing
+        </div>
+        <h1>Section Templates</h1>
+        <p class="intro-copy">Sama, open a template, copy its HTML, and paste it into the page where you want the section to appear.</p>
+        <details class="template-guide">
+          <summary>How to add a section</summary>
+          <ol>
+            <li>
+              Open the page’s HTML file and find its <code>&lt;main&gt;</code> area. Paste the copied section between two existing sections.
+            </li>
+            <li>
+              Keep the <code>data-template</code> attribute. It tells the JavaScript which section needs buttons or animation.
+            </li>
+            <li>
+              The shared stylesheet is <code>/site.css</code>. For counters, hotspots, the timeline, or the sponsor marquee, load <code>/scripts/sections.js</code> with <code>defer</code> in the page head. The hero and intro use <code>/scripts/hero.js</code> instead. Load each script once per page.
+            </li>
+            <li>
+              Save and preview the page. Add your own unique section <code>id</code> if you want to link directly to it.
+            </li>
+          </ol>
+        </details>
+        <div class="template-grid">
+          <article class="template-card">
+            <h2>Blueprint intro</h2>
+            <p>Use once, directly after the opening body tag. It matches the first video hero.</p>
+            <details data-template-page="/" data-template-key="intro">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Blueprint intro HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Video hero</h2>
+            <p>Replace the video and poster together if you change the footage.</p>
+            <details data-template-page="/" data-template-key="hero">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Video hero HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Animated counters</h2>
+            <p>Edit the visible numbers and their data-count values together.</p>
+            <details data-template-page="/" data-template-key="stats">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Animated counters HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Interactive car</h2>
+            <p>Change the hotspot descriptions in scripts/sections.js.</p>
+            <details data-template-page="/" data-template-key="car">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Interactive car HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Stacking build cards</h2>
+            <p>Duplicate a card for another step or replace its photo placeholder.</p>
+            <details data-template-page="/" data-template-key="build">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Stacking build cards HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Vehicle timeline</h2>
+            <p>Add the season button and its matching entry in scripts/sections.js.</p>
+            <details data-template-page="/" data-template-key="legacy">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Vehicle timeline HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Team contact section</h2>
+            <p>Includes the team page and faculty email buttons.</p>
+            <details data-template-page="/" data-template-key="team-cta">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Team contact section HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Sponsor marquee</h2>
+            <p>Update both logo lists so the loop stays continuous.</p>
+            <details data-template-page="/" data-template-key="sponsors">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Sponsor marquee HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>About content</h2>
+            <p>Edit the two story cards and source link.</p>
+            <details data-template-page="/about.html" data-template-key="about">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="About content HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Full team roster</h2>
+            <p>Use this for the advisor and all eight student teams together.</p>
+            <details data-template-page="/team.html" data-template-key="roster">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Full team roster HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Faculty advisor card</h2>
+            <p>Paste inside the roster. Add a photo and profile URL when they are ready.</p>
+            <details data-template-page="/team.html" data-template-key="faculty-profile">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Faculty advisor card HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Student team section</h2>
+            <p>Paste inside the roster, then change the team heading and the three sample profiles.</p>
+            <details data-template-page="/team.html" data-template-key="student-team">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Student team section HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Student profile card</h2>
+            <p>Paste inside a student-grid. Replace the photo placeholder, name, and title. Add a LinkedIn href and update its accessible label.</p>
+            <details data-template-page="/team.html" data-template-key="student-profile">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Student profile card HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Photo gallery</h2>
+            <p>Duplicate a figure and change its image, alt text, and caption.</p>
+            <details data-template-page="/gallery.html" data-template-key="gallery">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Photo gallery HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Gallery video</h2>
+            <p>Replace the video source and poster.</p>
+            <details data-template-page="/gallery.html" data-template-key="gallery-film">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="9" readonly aria-label="Gallery video HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+          <article class="template-card">
+            <h2>Footer wordmark</h2>
+            <p>Paste it after the closing <code>&lt;/footer&gt;</code> tag. Adjust its size and transparency in <code>styles/layout.css</code>.</p>
+            <details data-template-page="/" data-template-key="footer-wordmark">
+              <summary>View HTML</summary>
+              <button class="btn outline" type="button" data-copy disabled>Copy HTML</button>
+              <textarea rows="5" readonly aria-label="Footer wordmark HTML"></textarea>
+              <p role="status" class="template-status"></p>
+            </details>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container foot">
+        <div class="footer-brand">
+          <a class="brand" href="/">UTA<b>RACING.</b></a>
+          <p>Formula SAE · Arlington, TX</p>
+          <p class="footer-copyright">© <span data-copyright-year></span> UTA Racing · Independent site preview</p>
+        </div>
+        <nav class="foot-links" aria-label="Footer navigation">
+          <span class="footer-label" aria-hidden="true">Explore</span>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/team.html">Team Members</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/templates.html" aria-current="page">Templates</a>
+          <a href="mailto:woods@uta.edu">Contact</a>
+        </nav>
+        <nav class="foot-links" aria-label="UTA Racing social media">
+          <span class="footer-label" aria-hidden="true">Follow UTA Racing</span>
+          <a href="https://www.instagram.com/utaracing/">Instagram</a>
+          <a href="https://www.facebook.com/UTArlingtonRacing/">Facebook</a>
+          <a href="https://www.linkedin.com/company/utaracing/">LinkedIn</a>
+          <a href="https://www.youtube.com/@UTAFSAE">YouTube</a>
+          <a href="https://x.com/UTARacing">X</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Sama, paste this after the closing footer tag. The span scales to the space inside the band. -->
+    <div class="footer-wordmark" data-template="footer-wordmark" aria-hidden="true">
+      <span>UTARACING</span>
+    </div>
+  </body>
+</html>

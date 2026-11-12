@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f4">
+    <title>Gallery | UTA Formula SAE Racing</title>
+    <link rel="preload" href="/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/site.css">
+    <script src="/scripts/site.js" defer></script>
+  </head>
+  <body>
+    <!-- Sama, these page links appear in the header and footer of each HTML page. -->
+    <header>
+      <div class="nav">
+        <a class="brand" href="/">UTA<b>RACING.</b><small>FORMULA SAE · ARLINGTON, TX</small></a>
+        <button class="menu" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <nav class="links" id="site-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/team.html">Team Members</a>
+          <a href="/gallery.html" aria-current="page">Gallery</a>
+          <a href="/templates.html">Templates</a>
+        </nav>
+      </div>
+    </header>
+    <main class="section inner-page">
+      <div class="container">
+        <div class="eyebrow">
+          UTA Formula SAE Racing
+        </div>
+        <h1>Gallery</h1>
+        <!-- These photos are frames from the Texas Autocross footage. Add more figures as new photos come in. -->
+        <section class="gallery-grid" data-template="gallery" aria-label="Texas Autocross photos">
+          <figure>
+            <a href="/media/gallery/blue-uta-car.jpg"><img src="/media/gallery/blue-uta-car.jpg" alt="Blue UTA Formula SAE car passing a cone" width="960" height="540" loading="lazy"></a>
+            <figcaption>UTA Racing on course</figcaption>
+          </figure>
+          <figure>
+            <a href="/media/gallery/orange-formula-car.jpg"><img src="/media/gallery/orange-formula-car.jpg" alt="Orange formula car turning through the cones" width="960" height="540" loading="lazy"></a>
+            <figcaption>Through the cones</figcaption>
+          </figure>
+          <figure>
+            <a href="/media/gallery/course-view.jpg"><img src="/media/gallery/course-view.jpg" alt="Wide view of the autocross course and spectators" width="960" height="540" loading="lazy"></a>
+            <figcaption>Texas Autocross course</figcaption>
+          </figure>
+        </section>
+        <section class="gallery-film" data-template="gallery-film">
+          <h2>Texas Autocross footage</h2>
+          <video controls playsinline preload="none" poster="/media/uta-autocross-centered.jpg" aria-label="Texas Autocross racing footage">
+            <source src="/media/uta-autocross-full.mp4" type="video/mp4">
+          </video>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container foot">
+        <div class="footer-brand">
+          <a class="brand" href="/">UTA<b>RACING.</b></a>
+          <p>Formula SAE · Arlington, TX</p>
+          <p class="footer-copyright">© <span data-copyright-year></span> UTA Racing · Independent site preview</p>
+        </div>
+        <nav class="foot-links" aria-label="Footer navigation">
+          <span class="footer-label" aria-hidden="true">Explore</span>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/team.html">Team Members</a>
+          <a href="/gallery.html" aria-current="page">Gallery</a>
+          <a href="/templates.html">Templates</a>
+          <a href="mailto:woods@uta.edu">Contact</a>
+        </nav>
+        <nav class="foot-links" aria-label="UTA Racing social media">
+          <span class="footer-label" aria-hidden="true">Follow UTA Racing</span>
+          <a href="https://www.instagram.com/utaracing/">Instagram</a>
+          <a href="https://www.facebook.com/UTArlingtonRacing/">Facebook</a>
+          <a href="https://www.linkedin.com/company/utaracing/">LinkedIn</a>
+          <a href="https://www.youtube.com/@UTAFSAE">YouTube</a>
+          <a href="https://x.com/UTARacing">X</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Sama, paste this after the closing footer tag. The span scales to the space inside the band. -->
+    <div class="footer-wordmark" data-template="footer-wordmark" aria-hidden="true">
+      <span>UTARACING</span>
+    </div>
+  </body>
+</html>

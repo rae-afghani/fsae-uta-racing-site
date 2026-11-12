@@ -1,0 +1,8 @@
+/* Shared stylesheet entry point. Open the file that matches what you want to edit. */
+@import url("/styles/theme.css");
+@import url("/styles/layout.css");
+@import url("/styles/sections.css");
+@import url("/styles/hero.css");
+@import url("/styles/pages.css");
+@import url("/styles/team.css");
+@import url("/styles/responsive.css");
